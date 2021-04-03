@@ -1,0 +1,47 @@
+.feature-grid{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(200px, 400px) );
+  grid-gap: 1rem;
+}
+
+app-feature.fadeOut{
+  animation: fadeOut 0.4s ease-out 0s forwards;
+}
+
+app-feature.fadeIn{
+  animation: fadeIn 0.4s ease-out 0s forwards;
+}
+
+@keyframes fadeOut {
+  99.99% {
+    position: inherit;
+  }
+  100%{
+    transform: scale(0);
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
+@keyframes fadeIn {
+  0%{
+    position: inherit;
+    visibility: inherit;
+    transform: scale(0);
+    opacity: 0;
+  }
+  80%{
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+    position: inherit;
+  }
+}
+
+:host{
+  width:100%;
+}

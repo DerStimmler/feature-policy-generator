@@ -1,0 +1,50 @@
+.card-content{
+  display: flex;
+  flex-direction: column;
+  gap:0.3rem;
+}
+
+.invisible{
+  visibility: hidden;
+}
+
+.feature-info{
+  display: flex;
+  gap:1rem;
+  font-size: x-large;
+}
+
+.feature-info-directive{
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+.none{
+  background-color: #57EB81;
+}
+
+.self{
+  background-color: #636EEB;
+}
+
+.src{
+  background-color: #EBD586;
+}
+
+.all{
+  background-color: #EB6E6E;
+}
+
+::ng-deep{
+  .mat-form-field-wrapper{
+    padding:0;
+    margin: 0;
+  }
+  .mat-card-header-text {
+    margin:0;
+  }
+
+  .mat-flat-button{
+    background-color: #5E5E5E !important;
+  }
+}

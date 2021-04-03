@@ -1,0 +1,10 @@
+<mat-card class="outputs">
+<mat-form-field appearance="outline">
+  <mat-label>Feature-Policy</mat-label>
+  <textarea matInput [readonly]="true" [value]="buildFeaturePolicy(features)" [rows]="6"></textarea>
+</mat-form-field>
+<mat-form-field appearance="outline">
+  <mat-label>Permission-Policy</mat-label>
+  <textarea matInput [readonly]="true" [value]="buildPermissionPolicy(features)" [rows]="6"></textarea>
+</mat-form-field>
+</mat-card>
