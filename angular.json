@@ -125,6 +125,12 @@
               "devServerTarget": "feature-policy-generator:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://derstimmler.github.io/feature-policy-generator/"
+          }
         }
       }
     }
