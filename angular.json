@@ -129,7 +129,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "https://derstimmler.github.io/feature-policy-generator/"
+            "baseHref": "/feature-policy-generator/"
           }
         }
       }
