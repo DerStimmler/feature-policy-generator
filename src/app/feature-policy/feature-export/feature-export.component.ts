@@ -1,5 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Feature} from "../feature";
+import {MatSnackBar} from "@angular/material/snack-bar";
+import {config} from "rxjs";
 
 @Component({
   selector: 'app-feature-export',
@@ -10,7 +12,7 @@ export class FeatureExportComponent implements OnInit {
 
   @Input() features: Feature[] = [];
 
-  constructor() { }
+  constructor(private snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
   }
@@ -21,5 +23,9 @@ export class FeatureExportComponent implements OnInit {
 
   buildPermissionPolicy(features: Feature[]):string {
     return features.map(f => f.exportAsPermission()).join("; ");
+  }
+
+  showInfoMessage() {
+    this.snackBar.open("Copied!", "", {duration: 1000, horizontalPosition: "end", verticalPosition: "bottom", });
   }
 }
