@@ -53,5 +53,6 @@
   "plugins":
   [
     "stylelint-order"
-  ]
+  ],
+  "extends": ["stylelint-config-standard","stylelint-config-sass-guidelines"]
 }

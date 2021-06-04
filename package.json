@@ -7,6 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
+    "lint:styles": "yarn stylelint **/*.scss",
     "e2e": "ng e2e",
     "deploy": "ng deploy"
   },
@@ -28,6 +29,9 @@
     "eslint-plugin-unused-imports": "^1.1.1",
     "prettier": "^2.3.0",
     "rxjs": "~6.6.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^22.0.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
   },
