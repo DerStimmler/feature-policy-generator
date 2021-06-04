@@ -1,12 +1,18 @@
-<mat-card class="{{getClassName()}}">
+<mat-card class="{{ getClassName() }}">
   <mat-card-content class="card-content">
     <div class="feature-info">
-      <div class="feature-info-directive">{{feature.directive}}</div>
-      <div class="feature-info-type">{{feature.allowList.type}}</div>
+      <div class="feature-info-directive">{{ feature.directive }}</div>
+      <div class="feature-info-type">{{ feature.allowList.type }}</div>
     </div>
     <mat-form-field appearance="outline" [class.invisible]="!feature.allowList.isOriginsEnabled()">
       <mat-label>Origins</mat-label>
-      <input matInput #originsInput (input)="updateOrigins(feature, originsInput.value)" [value]="feature.allowList.origins?.join(' ')" placeholder="https://example1.com https://example2.com ...">
+      <input
+        matInput
+        #originsInput
+        (input)="updateOrigins(feature, originsInput.value)"
+        [value]="feature.allowList.origins?.join(' ')"
+        placeholder="https://example1.com https://example2.com ..."
+      />
       <mat-icon matSuffix>cloud</mat-icon>
     </mat-form-field>
     <button mat-flat-button color="primary" (click)="feature.changeType()">Change Type</button>

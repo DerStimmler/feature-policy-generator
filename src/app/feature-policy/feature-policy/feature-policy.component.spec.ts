@@ -8,9 +8,8 @@ describe('FeaturePolicyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FeaturePolicyComponent ]
-    })
-    .compileComponents();
+      declarations: [FeaturePolicyComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {

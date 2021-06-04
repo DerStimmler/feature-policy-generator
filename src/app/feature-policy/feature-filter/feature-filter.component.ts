@@ -1,4 +1,4 @@
-import {Component, OnInit, Output, EventEmitter} from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-feature-filter',
@@ -6,12 +6,9 @@ import {Component, OnInit, Output, EventEmitter} from '@angular/core';
   styleUrls: ['./feature-filter.component.scss']
 })
 export class FeatureFilterComponent implements OnInit {
-
   @Output() filter = new EventEmitter<string>();
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

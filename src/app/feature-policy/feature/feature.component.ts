@@ -1,5 +1,5 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {AllowList, AllowType, Feature} from "../feature";
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { AllowList, AllowType, Feature } from '../feature';
 
 @Component({
   selector: 'app-feature',
@@ -7,25 +7,24 @@ import {AllowList, AllowType, Feature} from "../feature";
   styleUrls: ['./feature.component.scss']
 })
 export class FeatureComponent implements OnInit {
-
-  @Input() feature: Feature = new Feature("undefined", new AllowList(AllowType.NONE));
+  @Input() feature: Feature = new Feature('undefined', new AllowList(AllowType.NONE));
   @Output() featureChange = new EventEmitter<Feature>();
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   updateOrigins(feature: Feature, value: string) {
     feature.allowList.origins = value
-      .split(" ")
+      .split(' ')
       .map(o => o.trim())
       .filter(o => o);
   }
 
-  getClassName():string {
-    if(this.feature.allowList.type === AllowType.ALL)
-      return "all";
+  getClassName(): string {
+    if (this.feature.allowList.type === AllowType.ALL) {
+      return 'all';
+    }
 
     return this.feature.allowList.type;
   }

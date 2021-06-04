@@ -3,16 +3,15 @@ import { CommonModule } from '@angular/common';
 import { FeaturePolicyComponent } from './feature-policy/feature-policy.component';
 import { FeatureManagementComponent } from './feature-management/feature-management.component';
 import { FeatureExportComponent } from './feature-export/feature-export.component';
-import {MatCardModule} from "@angular/material/card";
+import { MatCardModule } from '@angular/material/card';
 import { FeatureComponent } from './feature/feature.component';
-import {MatButtonModule} from '@angular/material/button';
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from "@angular/material/form-field";
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { FeatureFilterComponent } from './feature-filter/feature-filter.component';
-import {MatIconModule} from "@angular/material/icon";
-import {ClipboardModule} from "@angular/cdk/clipboard";
-import {MatSnackBarModule} from "@angular/material/snack-bar";
-
+import { MatIconModule } from '@angular/material/icon';
+import { ClipboardModule } from '@angular/cdk/clipboard';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -40,4 +39,4 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
     FeatureFilterComponent
   ]
 })
-export class FeaturePolicyModule { }
+export class FeaturePolicyModule {}

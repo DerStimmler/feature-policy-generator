@@ -1,16 +1,38 @@
 <mat-card class="outputs">
-<mat-form-field appearance="outline">
-  <mat-label>Feature-Policy</mat-label>
-  <textarea matInput #featurePolicyOutput [readonly]="true" [value]="buildFeaturePolicy(features)" [rows]="6"></textarea>
-  <button mat-icon-button matSuffix [cdkCopyToClipboard]="featurePolicyOutput.value" (cdkCopyToClipboardCopied)="showInfoMessage()">
-    <mat-icon>content_copy</mat-icon>
-  </button>
-</mat-form-field>
-<mat-form-field appearance="outline">
-  <mat-label>Permission-Policy</mat-label>
-  <textarea matInput #permissionPolicyOutput [readonly]="true" [value]="buildPermissionPolicy(features)" [rows]="6"></textarea>
-  <button mat-icon-button matSuffix [cdkCopyToClipboard]="permissionPolicyOutput.value" (cdkCopyToClipboardCopied)="showInfoMessage()">
-    <mat-icon>content_copy</mat-icon>
-  </button>
-</mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Feature-Policy</mat-label>
+    <textarea
+      matInput
+      #featurePolicyOutput
+      [readonly]="true"
+      [value]="buildFeaturePolicy(features)"
+      [rows]="6"
+    ></textarea>
+    <button
+      mat-icon-button
+      matSuffix
+      [cdkCopyToClipboard]="featurePolicyOutput.value"
+      (cdkCopyToClipboardCopied)="showInfoMessage()"
+    >
+      <mat-icon>content_copy</mat-icon>
+    </button>
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Permission-Policy</mat-label>
+    <textarea
+      matInput
+      #permissionPolicyOutput
+      [readonly]="true"
+      [value]="buildPermissionPolicy(features)"
+      [rows]="6"
+    ></textarea>
+    <button
+      mat-icon-button
+      matSuffix
+      [cdkCopyToClipboard]="permissionPolicyOutput.value"
+      (cdkCopyToClipboardCopied)="showInfoMessage()"
+    >
+      <mat-icon>content_copy</mat-icon>
+    </button>
+  </mat-form-field>
 </mat-card>

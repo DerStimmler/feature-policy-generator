@@ -8,9 +8,8 @@ describe('FeatureManagementComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FeatureManagementComponent ]
-    })
-    .compileComponents();
+      declarations: [FeatureManagementComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {
