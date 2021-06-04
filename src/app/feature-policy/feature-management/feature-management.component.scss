@@ -1,14 +1,14 @@
-.feature-grid{
+.feature-grid {
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(330px, 1fr) );
   grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
 }
 
-app-feature.fadeOut{
+app-feature.fadeOut {
   animation: fadeOut 0.4s ease-out 0s forwards;
 }
 
-app-feature.fadeIn{
+app-feature.fadeIn {
   animation: fadeIn 0.4s ease-out 0s forwards;
 }
 
@@ -16,32 +16,35 @@ app-feature.fadeIn{
   99.99% {
     position: inherit;
   }
-  100%{
-    transform: scale(0);
+
+  100% {
     opacity: 0;
-    visibility: hidden;
     position: absolute;
+    transform: scale(0);
+    visibility: hidden;
   }
 }
 
 @keyframes fadeIn {
-  0%{
-    position: inherit;
-    visibility: inherit;
-    transform: scale(0);
+  0% {
     opacity: 0;
+    position: inherit;
+    transform: scale(0);
+    visibility: inherit;
   }
-  80%{
-    transform: scale(1.05);
+
+  80% {
     opacity: 0.8;
+    transform: scale(1.05);
   }
-  100%{
-    transform: scale(1);
+
+  100% {
     opacity: 1;
     position: inherit;
+    transform: scale(1);
   }
 }
 
-:host{
-  width:100%;
+:host {
+  width: 100%;
 }
