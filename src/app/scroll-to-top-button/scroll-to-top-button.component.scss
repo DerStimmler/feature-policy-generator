@@ -1,0 +1,16 @@
+:host {
+  bottom: 2rem;
+  position: fixed;
+  right: 2rem;
+}
+
+.scroll-button {
+  opacity: 0;
+  transition: opacity 1s, visibility 1s;
+  visibility: hidden;
+}
+
+.show-scroll-button {
+  opacity: 1;
+  visibility: visible;
+}
