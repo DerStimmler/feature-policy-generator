@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Feature } from '../feature';
 
 @Component({
@@ -6,14 +6,10 @@ import { Feature } from '../feature';
   templateUrl: './feature-management.component.html',
   styleUrls: ['./feature-management.component.scss']
 })
-export class FeatureManagementComponent implements OnInit {
+export class FeatureManagementComponent {
   @Input() features: Feature[] = [];
   @Input() filter: string = '';
   @Output() featuresChange = new EventEmitter<Feature[]>();
-
-  constructor() {}
-
-  ngOnInit(): void {}
 
   filterMatches(feature: Feature): boolean {
     return !feature.directive.includes(this.filter);

@@ -4,15 +4,17 @@
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
 }
 
-app-feature.fadeOut {
-  animation: fadeOut 0.4s ease-out 0s forwards;
+.feature {
+  &.fade-out {
+    animation: fade-out 0.4s ease-out 0s forwards;
+  }
+
+  &.fade-in {
+    animation: fade-in 0.4s ease-out 0s forwards;
+  }
 }
 
-app-feature.fadeIn {
-  animation: fadeIn 0.4s ease-out 0s forwards;
-}
-
-@keyframes fadeOut {
+@keyframes fade-out {
   99.99% {
     position: inherit;
   }
@@ -25,7 +27,7 @@ app-feature.fadeIn {
   }
 }
 
-@keyframes fadeIn {
+@keyframes fade-in {
   0% {
     opacity: 0;
     position: inherit;

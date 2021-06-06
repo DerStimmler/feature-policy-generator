@@ -6,9 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "yarn jest",
-    "build:prod": "ng build --prod",
+    "build:prod": "ng build --configuration production",
     "lint": "ng lint",
-    "lint:styles": "ng stylelint **/*.scss",
+    "lint:styles": "yarn stylelint **/*.scss",
     "e2e": "ng e2e",
     "deploy": "ng deploy"
   },

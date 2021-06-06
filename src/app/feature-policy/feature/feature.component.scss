@@ -35,17 +35,6 @@
   background-color: #eb6e6e;
 }
 
-::ng-deep {
-  .mat-form-field-wrapper {
-    margin: 0;
-    padding: 0;
-  }
-
-  .mat-card-header-text {
-    margin: 0;
-  }
-
-  .mat-flat-button {
-    background-color: #5e5e5e !important;
-  }
+.mat-flat-button {
+  background-color: #5e5e5e;
 }

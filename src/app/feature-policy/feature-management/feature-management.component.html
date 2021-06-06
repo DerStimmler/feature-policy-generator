@@ -1,10 +1,9 @@
-<mat-card>
-  <div class="feature-grid">
-    <app-feature
-      *ngFor="let feature of features; let i = index"
-      [(feature)]="features[i]"
-      [class.fadeIn]="!filterMatches(feature)"
-      [class.fadeOut]="filterMatches(feature)"
-    ></app-feature>
-  </div>
-</mat-card>
+<div class="feature-grid">
+  <app-feature
+    class="feature"
+    *ngFor="let feature of features; let i = index"
+    [(feature)]="features[i]"
+    [class.fade-in]="!filterMatches(feature)"
+    [class.fade-out]="filterMatches(feature)"
+  ></app-feature>
+</div>

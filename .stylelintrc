@@ -48,7 +48,8 @@
     "unit-case": "lower",
     "unit-no-unknown": true,
     "value-keyword-case": "lower",
-    "value-no-vendor-prefix": true
+    "value-no-vendor-prefix": true,
+    "no-empty-source": null
   },
   "plugins":
   [

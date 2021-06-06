@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { AllowList, AllowType, Feature } from '../feature';
 
 @Component({
@@ -6,9 +6,7 @@ import { AllowList, AllowType, Feature } from '../feature';
   templateUrl: './feature-policy.component.html',
   styleUrls: ['./feature-policy.component.scss']
 })
-export class FeaturePolicyComponent implements OnInit {
-  constructor() {}
-
+export class FeaturePolicyComponent {
   features: Feature[] = [
     new Feature('accelerometer', new AllowList(AllowType.NONE)),
     new Feature('ambient-light-sensor', new AllowList(AllowType.NONE)),
@@ -42,6 +40,4 @@ export class FeaturePolicyComponent implements OnInit {
     new Feature('xr-spatial-tracking', new AllowList(AllowType.NONE))
   ];
   filter: string = '';
-
-  ngOnInit(): void {}
 }

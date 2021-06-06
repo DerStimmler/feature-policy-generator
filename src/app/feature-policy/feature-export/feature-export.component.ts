@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Feature } from '../feature';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
@@ -7,12 +7,10 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   templateUrl: './feature-export.component.html',
   styleUrls: ['./feature-export.component.scss']
 })
-export class FeatureExportComponent implements OnInit {
+export class FeatureExportComponent {
   @Input() features: Feature[] = [];
 
   constructor(private snackBar: MatSnackBar) {}
-
-  ngOnInit(): void {}
 
   buildFeaturePolicy(features: Feature[]): string {
     return features.map(f => f.exportAsFeature()).join('; ');
