@@ -4,7 +4,7 @@
       <div class="feature-info-directive">{{ feature.directive }}</div>
       <div class="feature-info-type">{{ feature.allowList.type }}</div>
     </div>
-    <mat-form-field appearance="outline" [class.invisible]="!feature.allowList.isOriginsEnabled()">
+    <mat-form-field appearance="outline" [class.invisible]="!feature.allowList.isOriginsEnabled()" color="accent">
       <mat-label>Origins</mat-label>
       <input
         matInput
