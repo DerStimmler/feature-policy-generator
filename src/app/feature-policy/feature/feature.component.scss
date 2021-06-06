@@ -38,3 +38,8 @@
 .mat-flat-button {
   background-color: #5e5e5e;
 }
+
+:host {
+  max-width: 410px;
+  min-width: 250px;
+}

@@ -1,23 +1,56 @@
-:host {
-  align-content: center;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center;
-  margin: 1rem auto;
-  width: 75%;
-}
-
-.container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  justify-content: center;
-}
-
 h1 {
   font-size: xx-large;
   font-weight: bolder;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  :host {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  :host {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem 2rem;
+  }
+
+  .container {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 70% 30%;
+  }
+
+  app-feature-export {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  app-feature-filter {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  app-feature-management {
+    grid-row: 2;
+    grid-column: 1;
+  }
 }
