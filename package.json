@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "yarn jest",
+    "build:prod": "ng build --prod",
     "lint": "ng lint",
     "lint:styles": "ng stylelint **/*.scss",
     "e2e": "ng e2e",
