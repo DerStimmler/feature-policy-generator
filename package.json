@@ -10,7 +10,10 @@
     "lint": "ng lint",
     "lint:styles": "yarn stylelint **/*.scss",
     "e2e": "ng e2e",
-    "deploy": "ng deploy"
+    "deploy": "ng deploy",
+    "clean:dist": "rimraf dist",
+    "clean:node_modules": "rimraf node_modules",
+    "clean": "yarn clean:dist && yarn clean:node_modules"
   },
   "private": true,
   "dependencies": {
