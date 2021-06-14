@@ -12,6 +12,9 @@ export class FeatureManagementComponent {
   @Output() featuresChange = new EventEmitter<Feature[]>();
 
   filterMatches(feature: Feature): boolean {
-    return !feature.directive.includes(this.filter);
+    const directive = feature.directive.toLowerCase();
+    const filter = this.filter.toLowerCase();
+
+    return !directive.includes(filter);
   }
 }
