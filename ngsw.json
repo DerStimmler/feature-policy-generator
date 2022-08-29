@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1623683443123,
+  "timestamp": 1661812692865,
   "index": "/feature-policy-generator/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/feature-policy-generator/favicon.ico",
         "/feature-policy-generator/index.html",
-        "/feature-policy-generator/main.f45e728eb6e638f25ef9.js",
+        "/feature-policy-generator/main.0dd5832d9620445f0689.js",
         "/feature-policy-generator/manifest.webmanifest",
-        "/feature-policy-generator/polyfills.8b55cf530465a95a78d1.js",
-        "/feature-policy-generator/runtime.014133573781b7ea3d70.js",
-        "/feature-policy-generator/styles.7006efb610edfee3e4ca.css"
+        "/feature-policy-generator/polyfills.b861b60f91c1022521b1.js",
+        "/feature-policy-generator/runtime.508417191522c3c6e47c.js",
+        "/feature-policy-generator/styles.8f0b9a85f1511ab8295e.css"
       ],
       "patterns": []
     },
@@ -52,12 +52,12 @@
     "/feature-policy-generator/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/feature-policy-generator/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/feature-policy-generator/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/feature-policy-generator/index.html": "912828a4f1775a1c5971fd8c4e7a876463230b1e",
-    "/feature-policy-generator/main.f45e728eb6e638f25ef9.js": "a89af2250efef8535fe57a11dd28e26724227578",
+    "/feature-policy-generator/index.html": "6a184d0b7558470d89fd305350378f3560f049bd",
+    "/feature-policy-generator/main.0dd5832d9620445f0689.js": "1e29474168fa2babb5fb88e0b60b368536a268ae",
     "/feature-policy-generator/manifest.webmanifest": "62e7be5ad535d7aab3b15029ca5846e7e0d3e6df",
-    "/feature-policy-generator/polyfills.8b55cf530465a95a78d1.js": "05e2ba7958cd02720a0cca71b2f7587173462859",
-    "/feature-policy-generator/runtime.014133573781b7ea3d70.js": "d50cbac5a09250de88044a3f8786041c805949e9",
-    "/feature-policy-generator/styles.7006efb610edfee3e4ca.css": "1810747f03a1e14b32586469bc7ad890e8637e38"
+    "/feature-policy-generator/polyfills.b861b60f91c1022521b1.js": "fd151b5922cff746273a5d6f2b9b5a34b0609786",
+    "/feature-policy-generator/runtime.508417191522c3c6e47c.js": "1a6cca9f124db58c5978984f4cc2a6ff90bcdf32",
+    "/feature-policy-generator/styles.8f0b9a85f1511ab8295e.css": "a69ee354a642b2662e9d0bd8797980d055a87878"
   },
   "navigationUrls": [
     {
